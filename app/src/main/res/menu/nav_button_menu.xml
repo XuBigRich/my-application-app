@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_page"
+        android:title="@string/app_home_page" />
+    <item
+        android:id="@+id/option"
+        android:title="@string/app_option">
+        <menu>
+            <item
+                android:id="@+id/forward"
+                android:title="@string/app_forward"/>
+            <item
+                android:id="@+id/back"
+                android:title="@string/app_back"/>
+        </menu>
+    </item>
+</menu>

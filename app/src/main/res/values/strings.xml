@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="app_home_page">首页</string>
+    <string name="app_option">操作</string>
+    <string name="app_forward">前进</string>
+    <string name="app_back">后退</string>
+    <string name="hello_word">hello word!</string>
+</resources>

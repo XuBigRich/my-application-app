@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.piao888.ui.widget.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.widget.TextView
+        android:background="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首页"
+        android:textSize="20dp" />
+
+    <android.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首页11111"
+        android:textSize="20dp" />
+
+    <android.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首页2222222"
+        android:textSize="30dp" />
+
+    <android.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首页3333333"
+        android:textSize="0dp" />
+
+    <android.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首页444444"
+        android:textSize="20dp" />
+
+    <android.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首页5555555"
+        android:textSize="30dp" />
+
+    <android.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首页666666"
+        android:textSize="20dp" />
+    <android.widget.TextView
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:text="首页777777"
+        android:textSize="20dp" />
+    <cn.piao888.ui.widget.TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        app:textViewText="111111111"
+        app:textViewTextColor="@color/black"
+        app:textViewTextMaxLength="20"
+        app:textViewTextSize="50dp" />
+
+
+
+</cn.piao888.ui.widget.FlowLayout>

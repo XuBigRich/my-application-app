@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    <cn.piao888.ui.widget.TitleBar-->
+<!--        android:id="@+id/title_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:attachToActivity="false"-->
+<!--        app:contentLayout="@layout/view_tab_layout"-->
+<!--        app:title="导航栏"-->
+<!--        app:titleTextColor="@color/black" />-->
+
+    <cn.piao888.ui.widget.TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        app:textViewText="111111111"
+        app:textViewTextColor="@color/black"
+        app:textViewTextMaxLength="20"
+        app:textViewTextSize="50dp" />
+
+    <cn.piao888.ui.widget.QQStepView
+        android:id="@+id/step_id"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:borderWidth="6dp"
+        app:innerColor="@color/red"
+        app:outerColor="@color/purple_700"
+        app:stepTextColor="@color/teal_200"
+        app:stepTextSize="20dp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_bookshelf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

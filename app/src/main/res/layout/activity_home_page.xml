@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/pageViewButton"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="1dp"
+        android:text="PageVie"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/adapterButton"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="1dp"
+        android:text="adapter"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/titleBarButton"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="1dp"
+        android:text="TitleBar"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/flowLayoutButton"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="1dp"
+        android:text="flowLayoutButton"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/coordinatorButton"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="1dp"
+        android:text="coordinatorButton"
+        android:textSize="10dp" />
+</LinearLayout>
