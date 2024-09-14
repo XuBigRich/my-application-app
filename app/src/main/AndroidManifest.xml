@@ -46,6 +46,7 @@
             android:theme="@style/Theme.MenuDemo" />
         <activity
             android:name=".ui.camera.CameraActivity"
+            android:launchMode="singleTask"
             android:exported="true" />
         <activity
             android:name=".ui.homePage.HomePageActivity"
