@@ -7,6 +7,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import cn.piao888.ui.main.MainActivity
 import cn.piao888.R
+import cn.piao888.ui.camera.CameraActivity
 import cn.piao888.ui.coordinator.CoordinatorActivity
 import cn.piao888.ui.flowLayout.FlowLayoutActivity
 import cn.piao888.ui.pageView.PageViewActivity
@@ -17,6 +18,7 @@ class HomePageActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var adapterButton: Button
     lateinit var titleButton: Button
     lateinit var flowLayoutButton: Button
+    lateinit var cameraButton: Button
     val coordinatorButton by lazy {
         findViewById<Button>(R.id.coordinatorButton)
     }
@@ -30,6 +32,7 @@ class HomePageActivity : AppCompatActivity(), View.OnClickListener {
         adapterButton = this.findViewById(R.id.adapterButton)
         titleButton = this.findViewById(R.id.titleBarButton)
         flowLayoutButton = this.findViewById(R.id.flowLayoutButton)
+        cameraButton = this.findViewById(R.id.cameraButton)
         onListener()
     }
 
@@ -39,6 +42,7 @@ class HomePageActivity : AppCompatActivity(), View.OnClickListener {
         titleButton.setOnClickListener(this)
         flowLayoutButton.setOnClickListener(this)
         coordinatorButton.setOnClickListener(this)
+        cameraButton.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -67,6 +71,12 @@ class HomePageActivity : AppCompatActivity(), View.OnClickListener {
                 val coordinatorActivity = Intent(this, CoordinatorActivity::class.java)
                 startActivity(coordinatorActivity)
             }
+
+            R.id.cameraButton -> {
+                val cameraActivity = Intent(this, CameraActivity::class.java)
+                startActivity(cameraActivity)
+            }
+
         }
 
 

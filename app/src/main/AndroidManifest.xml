@@ -4,21 +4,49 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <queries>
+        <!-- 查询所有可以处理拍照意图的应用 -->
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="http" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher_a"
-        android:roundIcon="@mipmap/ic_launcher_a"
         android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_a"
         android:supportsRtl="true"
         android:theme="@style/Theme.MenuDemo"
         tools:targetApi="31">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="cn.piao888.myapplication"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
         <activity
             android:name=".ui.main.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.MenuDemo" />
+        <activity
+            android:name=".ui.camera.CameraActivity"
+            android:exported="true" />
         <activity
             android:name=".ui.homePage.HomePageActivity"
             android:exported="true">

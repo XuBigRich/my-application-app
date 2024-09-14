@@ -44,4 +44,12 @@
         android:layout_margin="1dp"
         android:text="coordinatorButton"
         android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="1dp"
+        android:text="cameraButton"
+        android:textSize="10dp" />
 </LinearLayout>
