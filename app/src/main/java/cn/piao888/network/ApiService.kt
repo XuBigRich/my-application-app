@@ -11,7 +11,7 @@ import retrofit2.http.Query
 interface ApiService {
     companion object {
         /** 请求根地址 */
-        val BASE_URL: String = "http://172.16.2.37:8080"
+        val BASE_URL: String = "http://192.168.3.11:8080"
     }
 
     @GET("/application/getMusicBean")

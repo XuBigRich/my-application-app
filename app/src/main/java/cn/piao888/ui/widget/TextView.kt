@@ -78,4 +78,10 @@ class TextView @JvmOverloads constructor(
         return super.onTouchEvent(event)
     }
 
+    fun setTextColor(color: Int) {
+        mTextColor = color
+        mPanel.color = mTextColor
+        invalidate() // 请求重新绘制视图以反映颜色更改
+    }
+
 }
