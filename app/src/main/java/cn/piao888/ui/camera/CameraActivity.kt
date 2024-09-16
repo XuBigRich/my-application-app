@@ -172,6 +172,7 @@ class CameraActivity : AppCompatActivity() {
         val homeIntent = Intent(this, CameraActivity::class.java).apply {
             // 将拍照的图片地址传递给首页
             putExtra("imageUri", photoURI.toString())
+            flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
         }
 
         startActivity(homeIntent)
